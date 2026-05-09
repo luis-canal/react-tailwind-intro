@@ -19,6 +19,6 @@ createRoot(document.getElementById('root')).render(
     <Hello name="Luis"/>
     <Hello name="Pedro"/>
 
-    pro
+    <Product t
   </StrictMode>,
 )
