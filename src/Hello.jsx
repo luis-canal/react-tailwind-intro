@@ -1,6 +1,10 @@
-function Hello () {
+function Hello ({ name = "NI"}) {
     return(
-        <h1>Primeiro componente</h1>
+        <>
+        <main>
+           <h1>Primeiro componente, {name}</h1> 
+        </main>
+        </>
     )
 }
 
