@@ -19,6 +19,7 @@ createRoot(document.getElementById('root')).render(
     <Hello name="Luis"/>
     <Hello name="Pedro"/>
 
-    <Product t
+    {DATA.map ( (product) => <Product title= {product.title} price={product.price} />)}
+
   </StrictMode>,
 )
