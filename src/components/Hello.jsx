@@ -1,11 +1,11 @@
-function UserLogged() {
-    <div>Usuário logado!</div>
+function UserLogged({ username }) {
+    return <div>Seja bem-vindo, {username}!</div>
 }
 
-function DoLogin(){
+function DoLogin() {
     return <div>Clique aqui e faça login</div>
 }
 
-export function Hello(isLogged = false, username = ""){
-
+export function Hello({ isLogged = false, username = "" }) {
+    return isLogged ? <UserLogged username={username} /> : <DoLogin />
 }

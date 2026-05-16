@@ -1,9 +1,7 @@
+import { Hello } from "./components/Hello"
+
 function App() {
-  return (
-    <h1 class="text-3xl font-bold underline text-red-700">
-      <div>Teste</div>
-    </h1>
-  )
+  return <Hello isLogged={false} username="Luis"/>
 }
 
 export default App
