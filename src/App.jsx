@@ -5,7 +5,9 @@ function App() {
   const [userState, setUserState] = useState(false)
   const [username, setUsername] = useState("Luis")
 
-  return <Hello isLogged={userState} username={username} />
+  setTimeout(() => {setUserState(true)}, 5000)      // Simula um login após 5 segundos
+
+  return <Hello isLogged={userState} username={username} /> 
 }
 
-export default App
+export default App 
