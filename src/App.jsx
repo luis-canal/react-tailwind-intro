@@ -1,7 +1,11 @@
 import { Hello } from "./components/Hello"
+import { useState } from "react"
 
 function App() {
-  return <Hello isLogged={false} username="Luis"/>
+  const [isLogged, setIsLogged] = useState(false)
+  const [username, setUsername] = useState("Luis")
+
+  return <Hello isLogged={isLogged} username={username} />
 }
 
 export default App
